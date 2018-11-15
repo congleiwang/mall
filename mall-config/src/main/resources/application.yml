@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/congleiwang/mall.git
           basedir: /config-server/config/basedir
-          search-paths: mall-config-repo
+          searchPaths: mall-config-repo
   rabbitmq:
     host: 47.98.112.246
     port: 5672
