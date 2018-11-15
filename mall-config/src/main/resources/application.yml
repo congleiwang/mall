@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: mall-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/congleiwang/mall.git
+          basedir: /config-server/config/basedir
+          search-paths: mall-config
+  rabbitmq:
+    host: 47.98.112.246
+    port: 5672
+    username: guest
+    password: Passw0rd
+eureka:
+  client:
+    service-url:
+      defaultZone: http://47.105.177.218:8761/eureka,http://47.106.125.36:8761/eureka,http://47.98.112.246:8761/eureka
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
