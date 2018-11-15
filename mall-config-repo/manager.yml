@@ -1,2 +1,3 @@
 config-server:
   test: true
+    upate: true
