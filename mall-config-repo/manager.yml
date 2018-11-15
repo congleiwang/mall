@@ -1,3 +1,20 @@
-config-server:
-  test: true
-    upate: true
+spring:
+  application:
+    name: order
+  datasource:
+    username: root
+    password: Passw0rd
+    url: jdbc:mysql://47.98.112.246:3306/springcloud_sell?characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+server:
+  port: 8181
+
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+env: dev
