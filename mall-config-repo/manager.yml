@@ -3,7 +3,6 @@ spring:
     name: order
   datasource:
     username: root
-    password: Passw0rd
     url: jdbc:mysql://47.98.112.246:3306/springcloud_sell?characterEncoding=utf8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
   rabbitmq:
