@@ -2,9 +2,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: Passw0rd
     url: jdbc:mysql://47.98.112.246:3306/springcloud_sell?characterEncoding=utf-8&useSSL=false
   redis:
     host: 47.98.112.246
     port: 6379
-    password: Passw0rd
