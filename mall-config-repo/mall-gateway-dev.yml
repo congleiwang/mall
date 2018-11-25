@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    mall-config:
+      path: /config/**
+      serviceId: mall-config
+      url: http://47.98.112.246:8080
+  # 忽略改匹配该正则的路由
+  ignored-patterns:
+    - /getUserPassword
+  # 转发所有敏感头消息
+  sensitive-headers:
